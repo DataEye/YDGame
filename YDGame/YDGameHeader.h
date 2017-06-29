@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, WindowType)
     Activity
 };
 
-typedef NS_ENUM(NSUInteger, YDPayStatus)
+typedef NS_ENUM(NSUInteger, YDToolStatus)
 {
     YD_FAIL = 0,
     YD_SUCCESS,
@@ -32,7 +32,7 @@ typedef NS_ENUM(NSUInteger, YDPayStatus)
 @optional
 -(void)accountLogin:(YDUserAccount*)model;
 -(void)accountRegist:(YDUserAccount*)model;
--(void)payResult:(YDPayStatus)result data:(id)data;
+-(void)toolResult:(YDToolStatus)result data:(id)data;
 
 @end
 
