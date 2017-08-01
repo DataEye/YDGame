@@ -9,15 +9,7 @@
 #ifndef YDGameHeader_h
 #define YDGameHeader_h
 
-#define YDGameToastShowCompleteNotification   @"YDGame_Toast_Show_Complete"
-
 @class YDUserAccount;
-
-typedef NS_ENUM(NSInteger, WindowType)
-{
-    Dialog = 0,
-    Activity
-};
 
 typedef NS_ENUM(NSUInteger, YDToolStatus)
 {
@@ -32,6 +24,7 @@ typedef NS_ENUM(NSUInteger, YDToolStatus)
 @optional
 -(void)accountLogin:(YDUserAccount*)model;
 -(void)accountRegist:(YDUserAccount*)model;
+-(void)accountLogout;
 -(void)toolResult:(YDToolStatus)result data:(id)data;
 
 @end
